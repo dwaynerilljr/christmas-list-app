@@ -21,13 +21,13 @@ function AddGift(props) {
                 placeholder="Enter gift.. :)" 
                 className="w-4/6 my-8 rounded-lg font-marker text-christmas-green" 
                 id="new-gift-input"
-                autocomplete='off'
+                autoComplete='off'
                 value={giftName}
                 onChange={handleChange}
             />
             <button 
                 type="submit" 
-                className="bg-christmas-green text-white ml-5 p-2 rounded-md hover:bg-christmas-green-300"
+                className="bg-christmas-green text-white ml-5 p-2 rounded-md hover:bg-christmas-green-100"
                 id="addBtn"
             >
                 Add Gift
