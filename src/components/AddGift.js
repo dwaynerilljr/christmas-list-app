@@ -19,7 +19,7 @@ function AddGift(props) {
             <input 
                 type="text" 
                 placeholder="Enter gift.. :)" 
-                className="w-4/6 mt-6 rounded-lg" 
+                className="w-4/6 my-8 rounded-lg font-marker text-christmas-green" 
                 id="new-gift-input"
                 autocomplete='off'
                 value={giftName}
@@ -27,7 +27,8 @@ function AddGift(props) {
             />
             <button 
                 type="submit" 
-                className="bg-christmas-red text-white ml-5 p-2 rounded-md"
+                className="bg-christmas-green text-white ml-5 p-2 rounded-md hover:bg-christmas-green-300"
+                id="addBtn"
             >
                 Add Gift
             </button>
