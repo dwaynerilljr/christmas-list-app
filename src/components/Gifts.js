@@ -20,7 +20,7 @@ export default function Gifts(props) {
             <input 
                 type="text" 
                 placeholder="Edit gift" 
-                className="w-5/6 rounded-lg font-marker text-christmas-green" 
+                className="w-5/6 rounded-xl font-marker text-christmas-green" 
                 id="new-gift-input"
                 autoComplete='off'
                 value={newName}
