@@ -16,26 +16,39 @@ function App(props) {
     setGifts(remainingGifts);
   }
 
+  function editGift(id, newName) {
+    const editedGiftList = gifts.map(gift => {
+      if (id === gift.id) {
+        return {...gift, name: newName}
+      }
+      return gift
+    });
+    setGifts(editedGiftList);
+  }
+
   const giftList = gifts.map(gift => 
     <Gifts 
       id={gift.id}
       name={gift.name}
       key={gift.id}
       deleteGift={deleteGift}
+      editGift={editGift}
     />
   )
 
   return (
-    <div className="flex h-screen text-center">
-      <div className="p-6 align-middle m-auto w-4/6 z-50">
+    <div className="flex h-screen text-center" id="base">
+      <div className="p-6 align-middle m-auto w-4/6 z-50 h-4/6">
         <h1 className="font-bold md:text-5xl text-christmas-red font-christmas">Christmas is right around the corner!</h1>
         <h2 className="mt-3 md:text-2xl text-white">That means it's time to get started on that Christmas list! <br/> What would you like for Christmas?</h2>
         <AddGift addItem={addItem} />
-        <ul className="flex flex-col bg-white text-3xl rounded-md">
+        <div className="flex flex-col bg-white text-3xl rounded-md overflow-y-auto h-4/6">
           <h5 className="font-marker text-christmas-red">Dear Santa,</h5>
-          <p className="font-marker text-christmas-red">All I want for Christmas is: </p>
-          {giftList}
-        </ul>
+          <p className="font-marker text-christmas-red">All I want for Christmas is (a): </p>
+          <ul>
+            {giftList}
+          </ul>
+        </div>
       </div>
       <div className="snowflakes z-10" aria-hidden="true">
         <div className="snowflake">
