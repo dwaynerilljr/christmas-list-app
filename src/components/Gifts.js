@@ -45,8 +45,8 @@ export default function Gifts(props) {
     )
 
     const viewTemplate = (
-        <div className="px-5 my-2 w-full text-christmas-green flex rounded-md" id="gift">
-            <li className="p-1 text-christmas-green font-semibold font-marker text-2xl">{props.name}</li>
+        <div className="px-2 w-full text-christmas-green flex border-b-2 border-blue-100" id="gift">
+            <li className="p-1 pl-4 text-christmas-green font-semibold font-marker text-2xl ">{props.name}</li>
             <div className="ml-auto font-sans">
                 <button
                     type="submit"
@@ -57,7 +57,7 @@ export default function Gifts(props) {
                 </button>
                 <button
                     type="button"
-                    className="bg-christmas-green text-white text-base border-none rounded-md p-2 hover:bg-christmas-green-300"
+                    className="bg-christmas-green text-white text-base border-none rounded-md mb-1 p-2 hover:bg-christmas-green-300"
                     onClick={() => setEditing(true)}
                 >
                     Edit
