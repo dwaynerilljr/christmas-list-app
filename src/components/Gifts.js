@@ -20,7 +20,7 @@ export default function Gifts(props) {
             <input 
                 type="text" 
                 placeholder="Edit gift" 
-                className="w-5/6 rounded-xl font-marker text-christmas-green" 
+                className="w-3/6 rounded-sm font-marker text-christmas-green py-0" 
                 id="new-gift-input"
                 autoComplete='off'
                 value={newName}
@@ -29,13 +29,13 @@ export default function Gifts(props) {
             <div className="ml-auto font-sans">
                 <button
                     type="submit"
-                    className="bg-christmas-green text-white text-base border-none rounded-md mr-2 p-2 hover:bg-christmas-green-300"
+                    className="bg-christmas-green text-white text-sm sm:text-base border-none rounded-md mr-2 p-1 sm:p-2 hover:bg-christmas-green-300"
                 >
                     Edit
                 </button>
                 <button
                     type="button"
-                    className="bg-christmas-red text-white text-base border-none rounded-md p-2 hover:bg-christmas-red-300"
+                    className="bg-christmas-red text-white text-sm sm:text-base border-none rounded-md p-1 sm:p-2 hover:bg-christmas-red-300"
                     onClick={() => setEditing(false)}
                 >
                     Cancel
@@ -46,18 +46,18 @@ export default function Gifts(props) {
 
     const viewTemplate = (
         <div className="px-2 w-full text-christmas-green flex border-b-2 border-blue-100" id="gift">
-            <li className="p-1 pl-4 text-christmas-green font-semibold font-marker text-2xl ">{props.name}</li>
+            <li className="p-1 pl-4 text-christmas-green font-semibold font-marker sm:text-2xl ">{props.name}</li>
             <div className="ml-auto font-sans">
                 <button
                     type="submit"
-                    className="bg-christmas-red text-white text-base border-none rounded-md mr-2 p-2 hover:bg-christmas-red-300"
+                    className="bg-christmas-red text-white text-sm border-none rounded-md mr-2 p-1 sm:p-2 hover:bg-christmas-red-300"
                     onClick={() => props.deleteGift(props.id)}
                 >
                     Delete
                 </button>
                 <button
                     type="button"
-                    className="bg-christmas-green text-white text-base border-none rounded-md mb-1 p-2 hover:bg-christmas-green-300"
+                    className="bg-christmas-green text-white text-sm border-none rounded-md mb-1 p-1 sm:p-2 hover:bg-christmas-green-300"
                     onClick={() => setEditing(true)}
                 >
                     Edit
@@ -66,5 +66,5 @@ export default function Gifts(props) {
         </div>
     )
 
-    return <li className="p-1 text-christmas-green font-semibold font-marker text-2xl">{isEditing ? editTemplate : viewTemplate}</li>
+    return <li className="p-1 text-christmas-green font-semibold font-marker sm:text-2xl">{isEditing ? editTemplate : viewTemplate}</li>
 }

@@ -38,11 +38,11 @@ function App(props) {
 
   return (
     <div className="flex h-screen text-center" id="base">
-      <div className="p-6 align-middle m-auto w-4/6 z-50 h-4/6">
-        <h1 className="font-bold md:text-5xl text-christmas-red font-christmas">Christmas is right around the corner!</h1>
-        <h2 className="mt-3 md:text-2xl text-white">That means it's time to get started on that Christmas list! <br/> What would you like for Christmas?</h2>
+      <div className="p-6 align-middle m-auto sm:w-4/6 z-50 h-4/6">
+        <h1 className="font-bold text-3xl sm:text-5xl text-christmas-red font-christmas">Christmas is right around the corner!</h1>
+        <h2 className="mt-3 text-sm sm:text-2xl text-white">That means it's time to get started on that Christmas list! <br/> What would you like for Christmas?</h2>
         <AddGift addItem={addItem} />
-        <div className="flex flex-col bg-white text-3xl rounded-md overflow-y-auto h-4/6">
+        <div className="flex flex-col bg-white sm:text-3xl rounded-md overflow-y-auto h-4/6 mb-20">
           <h5 className="font-marker text-christmas-red">Dear Santa,</h5>
           <p className="font-marker text-christmas-red">All I want for Christmas is (a): </p>
           <ul>
