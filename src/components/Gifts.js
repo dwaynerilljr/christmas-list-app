@@ -31,7 +31,7 @@ export default function Gifts(props) {
                     type="submit"
                     className="bg-christmas-green text-white text-sm sm:text-base border-none rounded-md mr-2 p-1 sm:p-2 hover:bg-christmas-green-300"
                 >
-                    Edit
+                    Save
                 </button>
                 <button
                     type="button"
