@@ -13,3 +13,8 @@ To add a gift, simply type the name of your gift into the Add Gift text field an
 Made a mistake? Don't worry about it! Just click the edit button and you can change the name of your gift! Once your finished editing, click save to save your edit:
 
 ![Editing a gift](https://github.com/dwaynerilljr/christmas-list-app/blob/a6137771e1eb13c8a3e1a0c5355159eec6ddd8ae/xmas-list-edit.gif)
+
+#Deleting a gift:
+Changed your mind and don't want that gift anymore? That's okay! :) just simply click the delete button and poof! It's gone :)
+
+![Deleting a gift](https://github.com/dwaynerilljr/christmas-list-app/blob/23eda3ae3ff268772a93a5132da9bf293869209a/xmas-list-delete.gif)
