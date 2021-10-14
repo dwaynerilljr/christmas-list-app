@@ -4,4 +4,4 @@ The 10 year old in me couldn't wait to make my list for Christmas every year... 
 
 The app is very simple an easy to use, just select Add gift and type in the name of your gift, shown below:
 
-![Adding gift](xmas-list.gif)
+![Adding gift](xmas-list.gif = 50x50)
