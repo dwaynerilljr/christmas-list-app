@@ -4,4 +4,4 @@ The 10 year old in me couldn't wait to make my list for Christmas every year... 
 
 The app is very simple an easy to use, just select Add gift and type in the name of your gift, shown below:
 
-!(https://drive.google.com/file/d/1zfSgGkoK-PKskhLdpXjZfy3XlMI2O2n4/view?usp=sharing)
+!(https://photos.app.goo.gl/4aniSUTzeFUKKU7aA.gif)
