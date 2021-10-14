@@ -2,7 +2,7 @@
 
 The 10 year old in me couldn't wait to make my list for Christmas every year... So now I've built this web app to do the same, sans the pen and paper :)
 
-The app is very simple an easy to use, I've provided a guide below:
+The app is very simple and easy to use, I've provided a guide below:
 
 # Adding a gift to your list:
 To add a gift, simply type the name of your gift into the Add Gift text field and then press the Add Gift button:
