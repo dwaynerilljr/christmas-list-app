@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Gifts from './components/Gifts';
 import AddGift from './components/AddGift';
 import { nanoid } from "nanoid";
+import Hero from './components/Hero';
 
 function App(props) {
   const [gifts, setGifts] = useState(props.gifts)
@@ -37,8 +38,9 @@ function App(props) {
   )
 
   return (
-    <div className="flex h-screen text-center" id="base">
-      <div className="p-6 align-middle m-auto sm:w-4/6 z-50 h-4/6">
+    <div className="grid text-center grid-cols-6 grid-rows-3">
+      <Hero />
+      <div className="p-6 align-middle m-auto sm:w-4/6 z-50 col-span-6">
         <h1 className="font-bold text-3xl sm:text-5xl text-christmas-red font-christmas">Christmas is right around the corner!</h1>
         <h2 className="mt-3 text-sm sm:text-2xl text-white">That means it's time to get started on that Christmas list! <br/> What would you like for Christmas?</h2>
         <AddGift addItem={addItem} />

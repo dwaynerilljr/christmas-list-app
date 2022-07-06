@@ -142,11 +142,3 @@ code {
   -webkit-animation-delay:4s,2.5s;
   animation-delay:4s,2.5s
 }
-
-@media (min-width: 640px) {
-  #base {
-    background-image: url('xmas-bg.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
